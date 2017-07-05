@@ -6,10 +6,6 @@ import { RandomService } from '../random.service';
   selector: 'app-counter',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css'],
-  providers: [
-    CounterService,
-    RandomService,
-  ],
 })
 export class CounterComponent implements OnInit {
 
