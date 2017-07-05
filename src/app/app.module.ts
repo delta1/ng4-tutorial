@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NewnameComponent } from './newname/newname.component';
 import { CounterComponent } from './counter/counter.component';
 import { CounterService } from './counter.service';
+import { RandomService } from './random.service';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { CounterService } from './counter.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
   ],
   providers: [
     CounterService,
     LocalStorageService,
+    RandomService,
   ],
   bootstrap: [AppComponent]
 })
