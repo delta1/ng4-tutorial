@@ -5,8 +5,8 @@ export class RandomService {
 
   constructor() { }
 
-  getRandomNumber(): number {
-    return Math.floor(Math.random() * 10);
+  getRandom(): number {
+    return Math.floor(Math.random() * 100);
   }
 
 }

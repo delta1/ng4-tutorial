@@ -7,14 +7,14 @@ import { LocalStorageService } from 'ngx-webstorage';
 import { AppComponent } from './app.component';
 import { NewnameComponent } from './newname/newname.component';
 import { CounterComponent } from './counter/counter.component';
-import { CounterService } from './counter.service';
+import { LocalStorageService } from 'ngx-webstorage';
 import { RandomService } from './random.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewnameComponent,
-    CounterComponent, 
+    CounterComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +22,6 @@ import { RandomService } from './random.service';
     HttpModule,
   ],
   providers: [
-    CounterService,
     LocalStorageService,
     RandomService,
   ],
