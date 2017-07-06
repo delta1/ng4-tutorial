@@ -6,19 +6,24 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NewnameComponent } from './newname/newname.component';
 import { CounterComponent } from './counter/counter.component';
+import { LocalStorageService } from 'ngx-webstorage';
+import { RandomService } from './random.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewnameComponent,
-    CounterComponent, 
+    CounterComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    LocalStorageService,
+    RandomService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
