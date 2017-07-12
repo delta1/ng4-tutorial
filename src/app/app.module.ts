@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { NewnameComponent } from './newname/newname.component';
 import { CounterComponent } from './counter/counter.component';
 import { RandomService } from './random.service';
+import { AlertDirective } from './alert.directive';
+import { RepeatDirective } from './repeat.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewnameComponent,
     CounterComponent,
+    AlertDirective,
+    RepeatDirective,
   ],
   imports: [
     BrowserModule,

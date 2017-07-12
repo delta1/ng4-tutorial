@@ -3,3 +3,9 @@
 </h1>
 <app-newname></app-newname>
 <app-counter></app-counter>
+<ul>
+  <li *ngFor="let i of [1,2,3]">{{i}}</li>
+</ul>
+<p alert *ngIf="true">Displayed!</p>
+<p *ngIf="false">Hidden!</p>
+<p *repeat="2">testing repeat directive</p>
