@@ -12,7 +12,6 @@ export class RepeatDirective {
   ) { }
 
   @Input() set repeat(num: number) {
-    console.log('repeat input num', num);
     if (num > 0) {
       for (let i = 0; i < num; i++) {
         this.viewContainer.createEmbeddedView(this.templateRef);
